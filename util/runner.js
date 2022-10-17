@@ -72,7 +72,7 @@ const downloadList = async list => {
 
       const outputFilePath = path.resolve(
         itemDir,
-        `${fileNameCleaned}.mp3`,
+        `${artistName} - ${fileNameCleaned}.mp3`,
       );
       //create the dir if it doesn't exist
       fs.mkdirSync(itemDir, { recursive: true });
